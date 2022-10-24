@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    min-height: 100vh;
+    background-color: #EEEEEE;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.header {
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #303841;
+    padding: 15px 0;
+}
+
+.hand-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    max-width: 100px;
+    max-height: 100px;
+    mix-blend-mode: multiply;
+}
+
+.score:nth-child(1) {
+    color: skyblue;
+}
+
+.score:nth-child(2) {
+    color: grey;
+}
+
+.score:nth-child(3) {
+    color: salmon;
+}
+
+.container button {
+    border-radius: 20px;
+    background-color: gray;
+}
+
+.container button:hover {
+    background-color: darkgrey;
+}
+
+.row {
+    color: #4B5D67;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.result {
+    min-height: 60px;
+}
+
+body .row {
+    margin: 10px 0;
+}
+
+.row .player,
+.row .computer {
+    height: 100px;
+    width: 100px;
+    background-color: rgba(161, 161, 161, 0.644);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px;
+}
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    /* 15% from the top and centered */
+    padding: 40px;
+    border: 3px solid #888;
+    border-radius: 20px;
+    width: 40%;
+    /* Could be more or less, depending on screen size */
+    text-align: center;
+}
+
+.modal-content h1 {
+    font-size: 60px;
+    padding-bottom: 20px;
+}
+
+.modal-content button {
+    border-radius: 15px;
+    color: #ffffff;
+    font-size: 30px;
+    background: #596d7a;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+.modal-content button:hover {
+    background: #59829c;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #6d6c6c;
+    margin: auto 0;
+    padding: 10px;
+}
+
+footer p {
+    color: #EEEEEE;
+    text-align: center;
+}
