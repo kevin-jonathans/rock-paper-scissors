@@ -1,13 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock-Paper-Scissors</title>
-    <script src="./game.js"></script>
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="./game.js" defer></script>
 </head>
+
 <body>
-    <h1 style="color: rgba(39, 39, 189, 0.808); display: flex; align-items: center; justify-content: center;">Hello</h1>
+
+    <header class="header">
+
+        <h1 id="title">ROCK PAPER SCISSORS</h1>
+
+    </header>
+
+    <div class="row">
+
+        <div class="container">
+
+            <div class="row">
+                <h2>Player</h2>
+                <h1 class="player">?</h1>
+            </div>
+
+            <div class="row">
+                <h2>Computer</h2>
+                <h1 class="computer">?</h1>
+            </div>
+
+        </div>
+
+        <h2 class="result"></h2>
+        <h2 class="result"></h2>
+
+        <div class="container">
+            <h2 class="score">Win : <span class="win">0</span></h2>
+            <h2 class="score">Tie : <span class="tie">0</span></h2>
+            <h2 class="score">Lose : <span class="lose">0</span></h2>
+        </div>
+
+        <h3>Player Choice:</h3>
+
+        <div class="container">
+
+            <div class="row">
+                <h3>ROCK</h3>
+                <button id="rock"><img src="./image/rock.png" class="hand-image" alt="rock"></button>
+            </div>
+
+            <div class="row">
+                <h3>PAPER</h3>
+                <button id="paper"><img src="./image/paper.png" class="hand-image" alt="paper"></button>
+            </div>
+
+            <div class="row">
+                <h3>SCISSORS</h3>
+                <button id="scissors"><img src="./image/scissors.png" class="hand-image" alt="scissors"></button>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="pop-up" class="modal">
+
+        <div class="modal-content">
+            <h1>WIN</h1>
+            <button>Restart</button>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Rock Paper Scissors</p>
+        <p>The Odin Project</p>
+    </footer>
+
 </body>
+
 </html>
