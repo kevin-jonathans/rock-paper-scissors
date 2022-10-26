@@ -21,7 +21,7 @@ body {
     gap: 50px;
 }
 
-.header {
+header {
     color: aliceblue;
     display: flex;
     justify-content: center;
